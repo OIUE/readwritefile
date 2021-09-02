@@ -13,3 +13,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 org.oiue.nar.nifi.processors.writefile.WriteProcessor
+org.oiue.nar.nifi.processors.writefile.ReadProcessor

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.oiue.nar.nifi.processors.writefile.WriteProcessorTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in org.oiue.nar.nifi.processors.writefile.WriteProcessorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s - in org.oiue.nar.nifi.processors.writefile.WriteProcessorTest

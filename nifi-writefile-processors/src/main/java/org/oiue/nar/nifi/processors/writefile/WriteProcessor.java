@@ -235,8 +235,8 @@ public class WriteProcessor extends AbstractProcessor {
                     if (System.currentTimeMillis() - ((Long) v.get("lasttime")) > time_out) {
                         getLogger().debug("iterator:{} ", new Object[]{iterator});
                         iterator.remove();
-                        gdotCopyFile= (Path) v.get("dotCopyFile");
-                        gfinalCopyFile= (Path) v.get("finalCopyFile");
+                        gdotCopyFile = (Path) v.get("dotCopyFile");
+                        gfinalCopyFile = (Path) v.get("finalCopyFile");
                         gfragment_identifier = (String) v.get("fragment_identifier");
                         End_o_processing = true;
                     }
@@ -248,7 +248,6 @@ public class WriteProcessor extends AbstractProcessor {
                 return;
             }
         } else {
-
             final Path configuredRootDirPath = Paths.get(context.getProperty(DIRECTORY).evaluateAttributeExpressions(flowFile).getValue());
             final String conflictResponse = context.getProperty(CONFLICT_RESOLUTION).getValue();
             final Integer maxDestinationFiles = context.getProperty(MAX_DESTINATION_FILES).asInteger();
@@ -271,7 +270,6 @@ public class WriteProcessor extends AbstractProcessor {
                 if (fragment_count != null) {
                     fragment_countl = Long.valueOf(fragment_count);
                 }
-
 
                 if (!Files.exists(rootDirPath)) {
                     if (context.getProperty(CREATE_DIRS).asBoolean()) {
@@ -478,7 +476,7 @@ public class WriteProcessor extends AbstractProcessor {
                 // try waiting a few ms to let whatever might cause rename failure to resolve
                 Thread.sleep(100L);
             } catch (InterruptedException e) {
-                logger.error(e.getMessage(),e);
+                logger.error(e.getMessage(), e);
             }
         }
 

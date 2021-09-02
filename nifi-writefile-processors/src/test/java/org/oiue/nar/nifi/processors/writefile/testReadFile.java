@@ -22,7 +22,6 @@ public class testReadFile {
         }
         in.close();
         fileReader.close();
-        java.sql.Types
     }
 
     @Test
